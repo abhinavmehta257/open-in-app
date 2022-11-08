@@ -19,9 +19,9 @@ p{
 .row{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 30px;
+  justify-content: center;
 }
 .row img,.row span {
   width: 60px;
+  margin: 10px 20px;
 }
