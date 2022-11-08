@@ -30,7 +30,8 @@ function RedirectPage() {
     const redirectId = url.split('/')[3];
     const {data} = await axios.get('http://localhost:3001/click'+'/'+ redirectId).catch((err)=>{
       console.log(data);
-      })
+      window.location.replace('theonelink.me')
+    })
       redirectToApp(data.links);
   }
     
