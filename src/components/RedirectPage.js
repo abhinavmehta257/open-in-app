@@ -28,7 +28,7 @@ function RedirectPage() {
   async function getRedirectUrl(){
     const url = window.location.href;
     const redirectId = url.split('/')[3];
-    const {data} = await axios.get('https://linker-backend.herokuapp.com'+'/'+ redirectId).catch((err)=>{
+    const {data} = await axios.get('https://linker-backend.herokuapp.com/click'+'/'+ redirectId).catch((err)=>{
       console.log(data);
       window.location.replace('https://theonelink.me')
     })
