@@ -12,8 +12,8 @@ const deepLink = {
         android:"intent://"
     },
     facebook:{
-        ios:"fb://profile?id=",
-        android:"fb://facewebmodal/f?href="
+        ios:"fb://",
+        android:"fb://"
     },
     twitter:{
         ios:"twitter://",
