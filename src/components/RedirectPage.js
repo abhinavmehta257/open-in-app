@@ -25,15 +25,12 @@ function redirectToApp(link){
 
 function RedirectPage() {
 
-  const [link,setLink] = useState('');
-  
   async function getRedirectUrl(){
     const url = window.location.href;
     const redirectId = url.split('/')[3];
-    const {data} = await axios.get('https://linker-backend.herokuapp.com/click'+'/'+ redirectId).catch((err)=>{
-      setLink(err);
+    const {data} = await axios.get('http://localhost:3001/click'+'/'+ redirectId).catch((err)=>{
+      console.log(data);
       })
-      setLink(data)
       redirectToApp(data.links);
   }
     

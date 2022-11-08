@@ -64,7 +64,7 @@ const userDevice = ()=>{
 const generateDeepLink = (link)=>{
     const device = userDevice();
     const website = getWebsiteName(link);
-    const withoutHttps = link.split('//')
+    const withoutHttps = link.split('//')[1];
     switch(device){
         case 'android':
             link = deepLink[website][device]+withoutHttps+'#Intent;scheme=https;S.browser_fallback_url='+link+';end';
