@@ -1,0 +1,27 @@
+.App{
+  padding: 20px;
+  text-align: center;
+}
+
+.header span{
+  color: #5f6fff;
+}
+p{
+  font-size: 18px;
+  font-weight: 600;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.row img,.row span {
+  width: 60px;
+}
