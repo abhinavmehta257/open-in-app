@@ -28,9 +28,9 @@ function RedirectPage() {
   async function getRedirectUrl(){
     const url = window.location.href;
     const redirectId = url.split('/')[3];
-    const {data} = await axios.get('http://localhost:3001/click'+'/'+ redirectId).catch((err)=>{
+    const {data} = await axios.get('https://linker-backend.herokuapp.com'+'/'+ redirectId).catch((err)=>{
       console.log(data);
-      window.location.replace('theonelink.me')
+      window.location.replace('https://theonelink.me')
     })
       redirectToApp(data.links);
   }
