@@ -25,3 +25,10 @@ p{
   width: 60px;
   margin: 10px 20px;
 }
+a{
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+.link{
+  text-decoration: underline;
+}

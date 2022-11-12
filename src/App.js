@@ -4,7 +4,7 @@ import RedirectPage from './components/RedirectPage';
 function App() {
   return (
     <div className="App">
-      <RedirectPage />
+      <a href='https://theonelink.me'><RedirectPage /></a>
     </div>
   );
 }
